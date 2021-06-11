@@ -32,7 +32,6 @@ __y__, the observed mean value of the outcome;
 __sd__, the observed standard deviation of the outcome;
 __m__, the number of missing participant outcome data. If a trial does **not** report this information for any investigated arm, insert `NA` in the corresponding arm(s); and
 __n__, the number of participants randomised on the assigned intervention.
-
 For a binary outcome, the columns of the data-frame `data` refer to the following elements:
 __t__, the intervention identifier;
 __r__, the number of observed events;
