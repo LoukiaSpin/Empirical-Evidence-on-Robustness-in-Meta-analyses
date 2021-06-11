@@ -37,7 +37,6 @@ __t__, the intervention identifier;
 __r__, the number of observed events;
 __m__, the number of missing participant outcome data. If a trial does **not** report this information for any investigated arm, insert `NA` in the corresponding arm(s); and
 __n__, the number of participants randomised on the assigned intervention.
-
 All elements appear in `data` as many times as the maximum number of interventions compared in a trial.
 * measure: A character string indicating the effect measure with values `OR`, `MD`, `SMD`, or `ROM` for the odds ratio, mean difference, standardised mean difference and ratio of means, respectively.
 
@@ -70,10 +69,10 @@ sensitivity.analysis.mod(data, measure, model, assumption, heter.prior, mean.mis
 
 #### Output of the function
 
-<p>This function returns a list with two elements that contain an R2jags output: **EM** which is the estimated effect measure of all possible comparisons of interventions under each scenario, and **tau** which is the between-trial standard deviation (assumed to be common for all observed comparisons) under each scenario.
+This function returns a list with two elements that contain an R2jags output: __EM__ which is the estimated effect measure of all possible comparisons of interventions under each scenario, and __tau__ which is the between-trial standard deviation (assumed to be common for all observed comparisons) under each scenario.
 
 #### Important details
-<p>This function calls the `prepare.model()` function that contains all models in the BUGS language. The function `sensitivity.analysis.mod()` is found in the script **A.Run empirical analysis_PMA & NMA.R**.
+This function calls the `prepare.model()` function that contains all models in the BUGS language. The function `sensitivity.analysis.mod()` is found in the script __A.Run empirical analysis_PMA & NMA.R__.
 
 ### Robustness Index 
 
@@ -85,7 +84,7 @@ robustness.index(ES.mat, threshold, primary.scenar, nt)
 
 #### Explaining the arguments
 
-* ES.mat: The input is the element **EM** from the function `sensitivity.analysis.mod()`. 
+* ES.mat: The input is the element __EM__ from the function `sensitivity.analysis.mod()`. 
 * threshold: The threshold of robustness. We suggest using 0.17 and 0.28 for a continuous and a binary outcome, respectively.
 * primary.scenar: A number to indicate the primary analysis (here, the missing at random assumption). We have considered `primary.scenar = 13`, namely, the 13-th scenario.
 * nt: The number of investigated interventions. In the case of pairwise meta-analysis, we have `nt = 2`. In the case of network meta-analysis, `nt` equals the number of interventions in the investigated network.
@@ -101,7 +100,8 @@ The function `robustness.index()` returns a list of three items:
 #### Important notes
 
 The robustness index is specific to the pairwise comparison. Therefore, we can calculate only _one robustness index_ for a pairwise meta-analysis, but _as many as the number of possible comparisons_ in the network meta-analysis. For instance, in a network of four interventions, we have six possible comparisons, and hence, we can calculate a total of six robustness indeces. 
-<p> The function `robustness.index()` is found in the script **Β.Determine robustness_PMA & NMA.R**.
+
+The function `robustness.index()` is found in the script __Β.Determine robustness_PMA & NMA.R__.
 
 ### Heatmap of Robustness Index 
 
@@ -132,7 +132,7 @@ KLD.plots(ES.mat, primary.scenar, compar, outcome, drug.names)
 
 #### Explaining the arguments 
 
-* ES.mat: The input is the element **EM** from the function `sensitivity.analysis.mod()`. 
+* ES.mat: The input is the element __EM__ from the function `sensitivity.analysis.mod()`. 
 * primary.scenar: A number to indicate the primary analysis (here, the missing at random assumption). We have considered `primary.scenar = 13`, namely, the 13-th scenario.
 * compar: A number that indicates the comparison of interest. The function `possible.comparisons.id()` can be used to identify the number that corresponds to the comparison of interest. This function is relevant and useful for a network of interventions.
 * outcome: A character string with values `binary` and `continuous` that indicates the outcome type.
