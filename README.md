@@ -143,4 +143,4 @@ KLD.plots(ES.mat, primary.scenar, compar, outcome, drug.names)
 
 The function `KLD.plots()` returns a five-by-five panel that illustrates three density plots simultaneously: one on the effect measure under the missing at random assumption (the primary analysis), one on the effect measure under an alternative informative missingness scenario, and one on the Kullback-Leibler divergence of these two missngness scenarios. 
   
-<The function `KLD.plots()` is found in the script __Β.Determine robustness_PMA & NMA.R__.
+The function `KLD.plots()` is found in the script __Β.Determine robustness_PMA & NMA.R__.
