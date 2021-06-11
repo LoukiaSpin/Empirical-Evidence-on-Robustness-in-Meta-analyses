@@ -1,5 +1,5 @@
 ***
-<img src="man/Figure 1.png" align="right" width="200" height="120" />
+<img src="man/Figure 1.png" align="right" width="360" height="240" />
 
 # How robust are findings of pairwise and network meta-analysis when missing participant outcome data occur?: an empirical study 
 
