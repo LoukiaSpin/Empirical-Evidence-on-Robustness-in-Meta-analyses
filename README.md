@@ -29,15 +29,17 @@ data.preparation(data, measure)
 * data: The input is a data-frame of a one-trial-per-row format containing arm-level data of each trial. This format is widely used for BUGS models. The columns of `data` refer to the following elements for a continuous outcome:
 __t__ which is an intervention identifier;
 __y__, the observed mean value of the outcome;
-**sd**, the observed standard deviation of the outcome;<br>
-**m**, the number of missing participant outcome data. If a trial does **not** report this information for any investigated arm, insert `NA` in the corresponding arm(s);<br>
-**n**, the number of participants randomised on the assigned intervention.<br>
-<p>For a binary outcome, the columns of the data-frame `data` refer to the following elements:<br>
-**t**, the intervention identifier;<br>
-**r**, the number of observed events;<br>
-**m**, the number of missing participant outcome data. If a trial does **not** report this information for any investigated arm, insert `NA` in the corresponding arm(s);<br>
-**n**, the number of participants randomised on the assigned intervention.<br>
-<p>All elements appear in `data` as many times as the maximum number of interventions compared in a trial.</p>
+__sd__, the observed standard deviation of the outcome;
+__m__, the number of missing participant outcome data. If a trial does **not** report this information for any investigated arm, insert `NA` in the corresponding arm(s); and
+__n__, the number of participants randomised on the assigned intervention.
+
+For a binary outcome, the columns of the data-frame `data` refer to the following elements:
+__t__, the intervention identifier;
+__r__, the number of observed events;
+__m__, the number of missing participant outcome data. If a trial does **not** report this information for any investigated arm, insert `NA` in the corresponding arm(s); and
+__n__, the number of participants randomised on the assigned intervention.
+
+All elements appear in `data` as many times as the maximum number of interventions compared in a trial.
 * measure: A character string indicating the effect measure with values `OR`, `MD`, `SMD`, or `ROM` for the odds ratio, mean difference, standardised mean difference and ratio of means, respectively.
 
 #### Output of the function
