@@ -120,7 +120,7 @@ HeatMap.AllComparisons.RI(RI, drug.names, threshold)
 #### Output of the function
 
 The function `HeatMap.AllComparisons.RI()` returns a lower triangular heatmap matrix which should be read from left to right. Each cell illustrates the robustness index for the corresponding pairwise comparison. A robustness index below the `threshold` implies present robustness for the corresponding comparisons (__green__ cells), whereas a robustness index equal or above the `threshold` implies lack of robustness (__red__ cells). 
-<p> The function `HeatMap.AllComparisons.RI()` is found in the script **Β.Determine robustness_PMA & NMA.R**.
+<p> The function `HeatMap.AllComparisons.RI()` is found in the script __Β.Determine robustness_PMA & NMA.R__.
 
 ### Density plots on the effect measure and Kullback-Leibler divergence under all missingness scenarios 
 
