@@ -1,6 +1,6 @@
 ***
 
-# How roburst are findings of pairwise and network meta-analysis when missing participant data occur?: an empirical study
+# How roburst are findings of pairwise and network meta-analysis when missing participant outcome data occur?: an empirical study
 
 ## Description of the repository
 
