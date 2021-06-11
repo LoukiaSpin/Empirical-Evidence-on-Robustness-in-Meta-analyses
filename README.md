@@ -120,7 +120,8 @@ HeatMap.AllComparisons.RI(RI, drug.names, threshold)
 #### Output of the function
 
 The function `HeatMap.AllComparisons.RI()` returns a lower triangular heatmap matrix which should be read from left to right. Each cell illustrates the robustness index for the corresponding pairwise comparison. A robustness index below the `threshold` implies present robustness for the corresponding comparisons (__green__ cells), whereas a robustness index equal or above the `threshold` implies lack of robustness (__red__ cells). 
-<p> The function `HeatMap.AllComparisons.RI()` is found in the script __Β.Determine robustness_PMA & NMA.R__.
+
+The function `HeatMap.AllComparisons.RI()` is found in the script __Β.Determine robustness_PMA & NMA.R__.
 
 ### Density plots on the effect measure and Kullback-Leibler divergence under all missingness scenarios 
 
@@ -141,4 +142,5 @@ KLD.plots(ES.mat, primary.scenar, compar, outcome, drug.names)
 #### Output of the function
 
 The function `KLD.plots()` returns a five-by-five panel that illustrates three density plots simultaneously: one on the effect measure under the missing at random assumption (the primary analysis), one on the effect measure under an alternative informative missingness scenario, and one on the Kullback-Leibler divergence of these two missngness scenarios. 
-<p> The function `KLD.plots()` is found in the script **Β.Determine robustness_PMA & NMA.R**.
+  
+<The function `KLD.plots()` is found in the script __Β.Determine robustness_PMA & NMA.R__.
