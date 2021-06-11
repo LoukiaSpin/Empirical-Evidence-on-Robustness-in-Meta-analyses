@@ -27,7 +27,7 @@ data.preparation(data, measure)
 #### Explaining the arguments
 
 * data: The input is a data-frame of a one-trial-per-row format containing arm-level data of each trial. This format is widely used for BUGS models. The columns of `data` refer to the following elements for a continuous outcome:
-<p>**t** which is an intervention identifier;<br>
+__t__ which is an intervention identifier;<br>
 **y**, the observed mean value of the outcome;<br>
 **sd**, the observed standard deviation of the outcome;<br>
 **m**, the number of missing participant outcome data. If a trial does **not** report this information for any investigated arm, insert `NA` in the corresponding arm(s);<br>
