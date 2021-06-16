@@ -1,5 +1,5 @@
 ***
-# How robust are findings of pairwise and network meta-analysis when missing participant outcome data occur?: an empirical study  
+# How robust are findings of pairwise and network meta-analysis in the presence of missing participant outcome data? 
 
 
 ## Description of the repository
